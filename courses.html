@@ -67,30 +67,30 @@
             </h2>
             <form>
 
-            <button>
+            <button onclick="bold()" type="button">
             b
         </button>
-        <button>
+        <button onclick="italic()" type="button">
             l
         </button>
-        <button>
+        <button onclick="underline()" type="button">
             underline
         </button>
-            <select>
-                <option> 20px </option>
-                <option> 30px </option>
-                <option> 40px </option>
+            <select id="size" onclick="sizes()">
+                <option value="20px"> 20px </option>
+                <option value="30px"> 30px </option>
+                <option value="40px"> 40px </option>
             </select>
 
 
-            <select>
-                <option> Arial </option>
-                <option> Myriad </option>
-                <option> century gothic </option>
+            <select id="typo" onclick="Typo()">
+                <option value="Arial"> Arial </option>
+                <option value="Myriad"> Myriad </option>
+                <option value="Times New Roman"> Times New Roman </option>
             </select>
             <br>
 
-            <textarea cols="40" rows="05"> </textarea>
+            <textarea id="manel" cols="40" rows="05"> </textarea>
         </form>
 </div>
     </center>
@@ -98,7 +98,7 @@
 
 </body>
 
-
+<script src="js/main.js"></script>
 
 
 </html>
