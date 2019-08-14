@@ -84,8 +84,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 200px;
     margin: 9px;
 }
-  .imig:hover{
-      opacity: 0.2;
+  
       
   } 
 
@@ -110,15 +109,38 @@ youtube {
     display: flex;
     position: fixed;
 }
-
+b { 
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-start ;
+}
+.imig { display:flex;
 
     
+}
+.imig button{
+    position: relative;
+    right: 50%; 
+    bottom: 50%;
+    
+    z-index: 2;
+}
+.imig:hover{
+    opacity: 0.4;
+}
+.imig button {
+    opacity: 0;
+height: 50px;
+margin-top:50px
+}
+.imig button:hover {
+    opacity: 1;
 
-
-
-   
-
-     
+}
+.imig button a{
+    text-decoration: none ;
+    color: black ;
+ }
   
     
 

@@ -2,42 +2,50 @@
 <html>
 
 <head>
-        <link rel="stylesheet" href="css/style.css">
+    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
-        <div class="nav">
-                
-   
-                <div class="logo">
-                        <img src="res/gmc.png" alt="res">
-                </div>
-        
-    <div>
-<li>
-    <a href="index.html"> HOME </a>
-</li>
-
-    <li>
-        <a href="courses.html"> COURSES </a>
-    </li>
+    <div class="nav">
 
 
-<li>
-    <a href="contact.html"> CONTACT </a>
-</li>
-    
-  </div>
+        <div class="logo">
+            <img src="res/gmc.png" alt="res">
+        </div>
 
-    </ul>
+        <div>
+            <li>
+                <a href="index.html"> HOME </a>
+            </li>
+
+            <li>
+                <a href="courses.html"> COURSES </a>
+            </li>
+
+
+            <li>
+                <a href="contact.html"> CONTACT </a>
+            </li>
 
         </div>
 
+        </ul>
+
     </div>
-    
+
+    </div>
+
     <center>
         <div class="cover">
             <h1>
@@ -45,55 +53,106 @@
             </h1>
         </div>
 
-    <div class="b"> 
-        <img src="res/b.png" alt="res">
-        <img src="res/o.png" alt="res">
-        <img src="res/v.png" alt="res">
-        <br>
-        <img src="res/1.png" alt="res">
-        <img src="res/y.png" alt="res">
-        <img src="res/p.png" alt="res">
-        <br>
-        <img src="res/black.png" alt="res">
-        <img src="res/vert.png" alt="res">
-        <img src="res/noir.png" alt="res">
-        <br>
+        <div class="b"> 
+                <div id="ex1" class="modal">
+                        <p>This is GoMyCode Track. 
+                                Each track has its own goal. 
+                                By adopting this track, you chose your own goal.. </p>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+            <div>
+            <div class="imgb">
+                <img src="res/b.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+            </div>
+            <div class="imgb">
+                <img src="res/o.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+            </div>
+            <div class="imgb">
+                <img src="res/v.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+                <br>
+            </div>
+        </div>
+        <div>
+               
 
-    </div>    
+            <div class="imgb">
+                <img src="res/1.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+                
+                <br>
+            </div>
+            <div class="imgb">
+                <img src="res/y.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
 
-<div>
+                <br>
+            </div>
+            <div class="imgb">
+                <img src="res/p.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+
+                <br>
+            </div>
+        </div>
+        <div>
+            <div class="imgb">
+                <img src="res/black.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+                <br>
+            </div>
+            <div class="imgb">
+                <img src="res/vert.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+                <br>
+            </div>
+            <div class="imgb">
+                <img src="res/noir.png" alt="res">
+                <button type="button"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+                <br>
+            </div>
+        </div>
+
+        </div>
+
+        <div>
             <h2>
                 Feedback
             </h2>
             <form>
 
-            <button onclick="bold()" type="button">
-            b
-        </button>
-        <button onclick="italic()" type="button">
-            l
-        </button>
-        <button onclick="underline()" type="button">
-            underline
-        </button>
-            <select id="size" onclick="sizes()">
-                <option value="20px"> 20px </option>
-                <option value="30px"> 30px </option>
-                <option value="40px"> 40px </option>
-            </select>
+                <button onclick="bold()" type="button">
+                    b
+                </button>
+                <button onclick="italic()" type="button">
+                    l
+                </button>
+                <button onclick="underline()" type="button">
+                    underline
+                </button>
+                <select id="size" onclick="sizes()">
+                    <option value="20px"> 20px </option>
+                    <option value="30px"> 30px </option>
+                    <option value="40px"> 40px </option>
+                </select>
 
 
-            <select id="typo" onclick="Typo()">
-                <option value="Arial"> Arial </option>
-                <option value="Myriad"> Myriad </option>
-                <option value="Times New Roman"> Times New Roman </option>
-            </select>
-            <br>
+                <select id="typo" onclick="Typo()">
+                    <option value="Arial"> Arial </option>
+                    <option value="Myriad"> Myriad </option>
+                    <option value="Times New Roman"> Times New Roman </option>
+                </select>
+                <br>
 
-            <textarea id="manel" cols="40" rows="05"> </textarea>
-        </form>
-</div>
+                <textarea id="manel" cols="40" rows="05"> </textarea>
+            </form>
+        </div>
     </center>
+
+
+    
 
 
 </body>
